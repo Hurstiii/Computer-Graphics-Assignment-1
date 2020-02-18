@@ -1,0 +1,8 @@
+﻿  SubSurfacing.cpp
+c:\users\george\documents\visual studio 2015\projects\computer graphics\cw1_1\cw1_2\Triangle.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\george\documents\visual studio 2015\projects\computer graphics\cw1_1\cw1_2\SubSurfacing.h(28): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\george\documents\visual studio 2015\projects\computer graphics\cw1_1\cw1_2\SubSurfacing.h(28): warning C4244: 'initializing': conversion from 'double' to 'const int', possible loss of data
+SubSurfacing.cpp(68): warning C4018: '<': signed/unsigned mismatch
+  SubSurfacing.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  CW1_2.vcxproj -> C:\Users\George\Documents\Visual Studio 2015\Projects\Computer Graphics\CW1_1\Debug\CW1_2.exe
+  CW1_2.vcxproj -> C:\Users\George\Documents\Visual Studio 2015\Projects\Computer Graphics\CW1_1\Debug\CW1_2.pdb (Partial PDB)
