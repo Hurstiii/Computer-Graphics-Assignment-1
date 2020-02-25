@@ -33,7 +33,7 @@ public:
     
 private:
     vector<Triangle> tList;
-    const int DEPTH = 3; // dont do 0
+    const int DEPTH = 5; // dont do 0
     const int NUM_OF_TRIANGLES = pow(4, DEPTH) * 8;
     
     struct RGB

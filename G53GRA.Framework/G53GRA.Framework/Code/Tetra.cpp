@@ -43,11 +43,6 @@ Tetra::Tetra()
     
 }
 
-
-
-
-
-
 void Tetra::Display()
 {
     glTranslatef(pos[0], pos[1], pos[2]);
@@ -59,9 +54,6 @@ void Tetra::Display()
     glRotatef(rotation[1], 0.0f, 1.0f, 0.0f); // angle ry about (0,1,0)
     glRotatef(rotation[2], 0.0f, 0.0f, 1.0f); // angle rz about (0,0,1)
     glRotatef(rotation[0], 1.0f, 0.0f, 0.0f); // angle rx about (1,0,0)
-    float r, g, b, x, y, z;
-    float min = -10.0;
-    float max = 10;
     
     for (int i = 0; i < tList.size(); i++) {
         Triangle t = tList[i];
