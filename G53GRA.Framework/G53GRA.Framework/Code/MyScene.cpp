@@ -12,8 +12,8 @@ void MyScene::Initialise()
     glLoadIdentity();     // reset matrix
 //    glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClearColor(1.f,1.f,1.f,1.f);
-    Cube *cube = new Cube();
-    addObjectToScene(cube);
+//    Cube *cube = new Cube();
+//    addObjectToScene(cube);
 
     Tetra *tetra = new Tetra();
     addObjectToScene(tetra);

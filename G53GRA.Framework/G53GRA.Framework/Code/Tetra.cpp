@@ -1,10 +1,5 @@
 #include "Tetra.hpp"
 
-float Tetra::FloatNormalise(float in, float min, float max) {
-    // returns a normalised floating point value in the range 0-1 from a given range
-    return (in - min) /    (max-min);
-}
-
 Tetra::Tetra()
 {
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE);
@@ -37,9 +32,9 @@ Tetra::Tetra()
     for(int x =0;x<tList.size(); x++)
     {
         RGB temp;
-        temp.r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) + 0.3;
-        temp.g = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) + 0.3;
-        temp.b = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) + 0.3;
+        temp.r = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) ;
+        temp.g = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) ;
+        temp.b = static_cast <float> (rand()) / static_cast <float> (RAND_MAX) ;
        
         rgb.push_back(temp);
     }
@@ -79,31 +74,8 @@ void Tetra::Display()
 
         glBegin(GL_TRIANGLES);
         glColor3f(color.r, color.g, color.b);
-//        x = t.a.x;
-//        y = t.a.y;
-//        z = t.a.z;
-//        r = FloatNormalise(x, min, max);
-//        g = FloatNormalise(y, min, max);
-//        b = FloatNormalise(z, min, max);
-//        glColor3f(r, g, b);
-        
         glVertex3f(t.a.x, t.a.y, t.a.z);
-//        x = t.b.x;
-//        y = t.b.y;
-//        z = t.b.z;
-//        r = FloatNormalise(x, min, max);
-//        g = FloatNormalise(y, min, max);
-//        b = FloatNormalise(z, min, max);
-//        glColor3f(r, g, b);
-        
         glVertex3f(t.b.x, t.b.y, t.b.z);
-//        x = t.c.x;
-//        y = t.c.y;
-//        z = t.c.z;
-//        r = FloatNormalise(x, min, max);
-//        g = FloatNormalise(y, min, max);
-//        b = FloatNormalise(z, min, max);
-//        glColor3f(r, g, b);
         glVertex3f(t.c.x, t.c.y, t.c.z);
        
         glEnd();

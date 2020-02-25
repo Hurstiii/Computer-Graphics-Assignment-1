@@ -25,7 +25,7 @@ void Cube::Display()
     glLoadIdentity(); // reset
     glEnable(GL_DEPTH_TEST);
 //
-    glTranslatef(100.f, 0.f, -200.f); // adjust drawing position from the current position
+    glTranslatef(0, 0.f, -200.f); // adjust drawing position from the current position
     glRotatef(160.f, 0.f, 1.f, 0.f); // rotate the whole scene around the y-axis 45 degrees (effectively chaning the camera position/ view point)
     glColor3f(0.f, 0.f, 0.f); // sets drawing color (R, G, B)
 

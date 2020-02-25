@@ -9,9 +9,9 @@
 #ifndef Tetra_hpp
 #define Tetra_hpp
 
-#define MOVE_X 200.f
+#define MOVE_X 0.f
 #define MOVE_Y 0.f
-#define SIZE 0.5f
+#define SIZE 1.f
 
 
 #include <stdio.h>
@@ -47,9 +47,7 @@ private:
     void convertToUnitVector(Vertex &v);
     void adjustForEqualDistToOrigin(Vertex &v);
     void splitTriangle(Vertex a, Vertex b, Vertex c, vector<Triangle> &tList, int &cIndex, int cDepth);
-    void checkGLError();
-    float FloatNormalise(float in, float min, float max);
-    
+    void checkGLError();    
     
 };
 #endif /* Tetra_hpp */
